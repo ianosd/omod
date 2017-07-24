@@ -1,0 +1,227 @@
+Cmp-Mod V01 Created by PcbNew   date = Sb 20 aug 2016 13:46:27 +0300
+
+BeginCmp
+TimeStamp = 57AF42AD
+Path = /5780E15A
+Reference = U1;
+ValeurCmp = LM7810ACT;
+IdModule  = TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41D4
+Path = /57813D75
+Reference = C1;
+ValeurCmp = CP_100u;
+IdModule  = Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41DC
+Path = /5780C5ED
+Reference = D1;
+ValeurCmp = MBR2045CTI;
+IdModule  = TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41E2
+Path = /5780CCA0
+Reference = D2;
+ValeurCmp = TVS_30;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41E8
+Path = /57813E0E
+Reference = D3;
+ValeurCmp = TVS_30;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41F0
+Path = /57811F19
+Reference = D4;
+ValeurCmp = MBR2045CTI;
+IdModule  = TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41F6
+Path = /57811F31
+Reference = D5;
+ValeurCmp = TVS_30;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF41FC
+Path = /57844674
+Reference = D6;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4202
+Path = /578400D8
+Reference = D7;
+ValeurCmp = TVS_30;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4208
+Path = /57844CB2
+Reference = D8;
+ValeurCmp = 1N4148;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF420E
+Path = /57840322
+Reference = D9;
+ValeurCmp = TVS_30;
+IdModule  = Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF421A
+Path = /5780D4F4
+Reference = IR4426;
+ValeurCmp = DIL8;
+IdModule  = Housings_DIP:DIP-8_W7.62mm_LongPads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4223
+Path = /5780EB17
+Reference = P1;
+ValeurCmp = Motor_control;
+IdModule  = Pin_Headers:Pin_Header_Angled_1x05;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4236
+Path = /5780E8E3
+Reference = Q1;
+ValeurCmp = Q_NPN_BCE;
+IdModule  = TO_SOT_Packages_THT:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF423E
+Path = /5780C6ED
+Reference = Q2;
+ValeurCmp = IRF540N;
+IdModule  = TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4245
+Path = /57811F79
+Reference = Q3;
+ValeurCmp = Q_NPN_BCE;
+IdModule  = TO_SOT_Packages_THT:TO-92_Inline_Wide;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF424D
+Path = /57811F1F
+Reference = Q4;
+ValeurCmp = IRF540N;
+IdModule  = TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal_LargePads;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4259
+Path = /5780EA32
+Reference = R2;
+ValeurCmp = R_npn;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF425F
+Path = /5780E7DC
+Reference = R3;
+ValeurCmp = R_rel;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF426B
+Path = /57811F73
+Reference = R5;
+ValeurCmp = R_rel;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF4271
+Path = /57811F49
+Reference = R6;
+ValeurCmp = 10;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM10mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF428B
+Path = /5780CD44
+Reference = REL_1;
+ValeurCmp = JW2SN-DC9V;
+IdModule  = mlib:Relay_DPDT_Schrack-RT2_RM5mm_mine;
+EndCmp
+
+BeginCmp
+TimeStamp = 57AF42A5
+Path = /57811F37
+Reference = REL_2;
+ValeurCmp = JW2SN-DC9V;
+IdModule  = mlib:Relay_DPDT_Schrack-RT2_RM5mm_mine;
+EndCmp
+
+BeginCmp
+TimeStamp = 57B1DE13
+Path = /57B1DA6E
+Reference = BT1;
+ValeurCmp = Battery;
+IdModule  = Connect:AK300-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 57B1E15D
+Path = /57840EBA
+Reference = P2;
+ValeurCmp = Motor_1;
+IdModule  = Connect:AK300-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 57B1E1B8
+Path = /57840D27
+Reference = P3;
+ValeurCmp = Motor_2;
+IdModule  = Connect:AK300-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 57B1E888
+Path = /57811FA8
+Reference = R4;
+ValeurCmp = R_npn;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM15mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 57B2029B
+Path = /5780DCAA
+Reference = R1;
+ValeurCmp = 10;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM15mm;
+EndCmp
+
+EndListe
