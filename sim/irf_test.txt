@@ -1,0 +1,6 @@
+.include irf540.txt
+
+Xirf d g 0 irf540
+vg g 0 5V
+Rl 1 d 50ohm
+vdd 1 0 15V
