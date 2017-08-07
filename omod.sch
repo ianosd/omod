@@ -1,5 +1,34 @@
 EESchema Schematic File Version 2
 LIBS:omod-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:omod-cache
 EELAYER 25 0
 EELAYER END
@@ -57,28 +86,6 @@ F 1 "GND" H 4850 3100 50  0000 C CNN
 F 2 "" H 4850 3250 50  0000 C CNN
 F 3 "" H 4850 3250 50  0000 C CNN
 	1    4850 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L TVS D2
-U 1 1 5780CCA0
-P 5400 2800
-F 0 "D2" H 5400 2950 50  0000 C CNN
-F 1 "TVS_30" H 5400 2650 50  0000 C CNN
-F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 5400 2800 50  0001 C CNN
-F 3 "" H 5400 2800 50  0000 C CNN
-	1    5400 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L RELAY_2RT REL_1
-U 1 1 5780CD44
-P 3850 2000
-F 0 "REL_1" H 3800 2400 50  0000 C CNN
-F 1 "JW2SN-DC9V" H 4000 1500 50  0000 C CNN
-F 2 "mlib:Relay_DPDT_Schrack-RT2_RM5mm_mine" H 3850 2000 50  0001 C CNN
-F 3 "" H 3850 2000 50  0000 C CNN
-	1    3850 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -269,17 +276,6 @@ F 3 "" H 8300 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TVS D5
-U 1 1 57811F31
-P 8850 3850
-F 0 "D5" H 8850 4000 50  0000 C CNN
-F 1 "TVS_30" H 8850 3700 50  0000 C CNN
-F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 8850 3850 50  0001 C CNN
-F 3 "" H 8850 3850 50  0000 C CNN
-	1    8850 3850
-	0    1    1    0   
-$EndComp
-$Comp
 L R R6
 U 1 1 57811F49
 P 7700 3950
@@ -390,16 +386,26 @@ F 3 "" H 3700 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 1650 4700 1650
+	4250 1650 4350 1650
 Wire Wire Line
-	4700 1400 4700 1950
+	4350 1650 4700 1650
+Wire Wire Line
+	4700 1400 4700 1650
+Wire Wire Line
+	4700 1650 4700 1950
 Wire Wire Line
 	4700 1950 4750 1950
 Connection ~ 4700 1650
 Wire Wire Line
-	4450 1950 4450 2350
+	4450 1950 4450 2150
 Wire Wire Line
-	4450 2350 5400 2350
+	4450 2150 4450 2350
+Wire Wire Line
+	4450 2350 4850 2350
+Wire Wire Line
+	4850 2350 5050 2350
+Wire Wire Line
+	5050 2350 5400 2350
 Wire Wire Line
 	5050 2350 5050 2150
 Wire Wire Line
@@ -447,16 +453,26 @@ Wire Wire Line
 Wire Wire Line
 	4100 2700 4300 2700
 Wire Wire Line
-	7700 2700 8150 2700
+	7700 2700 7800 2700
 Wire Wire Line
-	8150 2450 8150 3000
+	7800 2700 8150 2700
+Wire Wire Line
+	8150 2450 8150 2700
+Wire Wire Line
+	8150 2700 8150 3000
 Wire Wire Line
 	8150 3000 8200 3000
 Connection ~ 8150 2700
 Wire Wire Line
-	7900 3000 7900 3400
+	7900 3000 7900 3200
 Wire Wire Line
-	7900 3400 8850 3400
+	7900 3200 7900 3400
+Wire Wire Line
+	7900 3400 8300 3400
+Wire Wire Line
+	8300 3400 8500 3400
+Wire Wire Line
+	8500 3400 8850 3400
 Wire Wire Line
 	8500 3400 8500 3200
 Wire Wire Line
@@ -498,11 +514,19 @@ Wire Wire Line
 Wire Wire Line
 	6500 4350 6600 4350
 Wire Wire Line
-	4850 750  5850 750 
+	4850 750  5150 750 
+Wire Wire Line
+	5150 750  5350 750 
+Wire Wire Line
+	5350 750  5850 750 
 Wire Wire Line
 	4850 1100 4850 1450
 Wire Wire Line
-	4850 1450 5850 1450
+	4850 1450 5100 1450
+Wire Wire Line
+	5100 1450 5350 1450
+Wire Wire Line
+	5350 1450 5850 1450
 Wire Wire Line
 	5350 1450 5350 1350
 Wire Wire Line
@@ -517,42 +541,28 @@ Wire Wire Line
 	1250 1100 1450 1100
 Wire Wire Line
 	2500 900  2500 1100
-$Comp
-L TVS D7
-U 1 1 578400D8
-P 3300 1850
-F 0 "D7" H 3300 2000 50  0000 C CNN
-F 1 "TVS_30" H 3300 1700 50  0000 C CNN
-F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 3300 1850 50  0001 C CNN
-F 3 "" H 3300 1850 50  0000 C CNN
-	1    3300 1850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	3300 1550 3650 1550
+	3300 1550 3450 1550
+Wire Wire Line
+	3450 1550 3650 1550
 Wire Wire Line
 	3450 1550 3450 1750
 Wire Wire Line
-	3050 2150 3450 2150
+	3050 2150 3300 2150
+Wire Wire Line
+	3300 2150 3450 2150
 Wire Wire Line
 	3450 2150 3450 2050
-$Comp
-L TVS D9
-U 1 1 57840322
-P 6700 2900
-F 0 "D9" H 6700 3050 50  0000 C CNN
-F 1 "TVS_30" H 6700 2750 50  0000 C CNN
-F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 6700 2900 50  0001 C CNN
-F 3 "" H 6700 2900 50  0000 C CNN
-	1    6700 2900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	6400 2600 6900 2600
+	6400 2600 6700 2600
+Wire Wire Line
+	6700 2600 6900 2600
 Wire Wire Line
 	6900 2600 6900 2800
 Wire Wire Line
-	6300 3200 6900 3200
+	6300 3200 6700 3200
+Wire Wire Line
+	6700 3200 6900 3200
 Wire Wire Line
 	6900 3200 6900 3100
 $Comp
@@ -615,7 +625,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 3100 3300 3100
 Wire Wire Line
-	6900 3400 6900 4150
+	6900 3400 6900 3600
+Wire Wire Line
+	6900 3600 6900 4150
 Wire Wire Line
 	2900 3950 2900 4300
 Wire Wire Line
@@ -664,7 +676,9 @@ F 3 "" H 2300 2200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2550 2000 2550 2250
+	2550 2000 2550 2050
+Wire Wire Line
+	2550 2050 2550 2250
 Wire Wire Line
 	2550 2050 2300 2050
 Connection ~ 2550 2050
@@ -689,7 +703,7 @@ Wire Wire Line
 	6100 3600 6900 3600
 Connection ~ 6900 3600
 $Comp
-L Battery BT1
+L Battery-RESCUE-omod BT1
 U 1 1 57B1DA6E
 P 5850 1100
 F 0 "BT1" H 5950 1150 50  0000 L CNN
@@ -705,4 +719,15 @@ Connection ~ 5350 750
 Wire Wire Line
 	5850 1450 5850 1250
 Connection ~ 5350 1450
+$Comp
+L RELAY_2RT REL_1
+U 1 1 5780CD44
+P 3850 2000
+F 0 "REL_1" H 3800 2400 50  0000 C CNN
+F 1 "JW2SN-DC9V" H 4000 1500 50  0000 C CNN
+F 2 "mlib:Relay_DPDT_Schrack-RT2_RM5mm_mine" H 3850 2000 50  0001 C CNN
+F 3 "" H 3850 2000 50  0000 C CNN
+	1    3850 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

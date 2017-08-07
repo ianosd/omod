@@ -1,6 +1,30 @@
 .include irf540.txt
 
-Xirf d g 0 irf540
-vg g 0 5V
-Rl 1 d 50ohm
-vdd 1 0 15V
+Xirf m_0 g 0 irf540
+vg g 0 PULSE(0 5 0.04ms 0.01ms 0.01ms 0.14ms 0.2ms)
+*Rl 1 d 200ohm
+*Cl 1 d 1u
+
+vdd m_1 0 15V
+
+d1 d_end m_1 mod1
+.model mod1 D
+* MOTOR VOLTAGE
+RA  m_1   m_2   0.5
+LA  m_2   m_3   0.0015
+H_EMF   m_3 m_4 VSENSE2 0.05
+VSENSE1 m_4   m_0   DC 0V
+*
+* MOTOR TORQUE BASED ON INERTIA AND FRICTION
+H_TORQ  m_6 0 VSENSE1 0.05
+LJ  m_6   m_7   0.00025
+RB  m_7   m_8   0.0001
+VSENSE2 m_8   0   DC  0V
+
+VSENSE_D1 m_0 d_end DC 0V
+
+.tran 0.01ms 1s
+.plot i(VSENSE1)
+.plot v(m1, m0) v(g)
+.plot i(VSENSE2)
+.end
